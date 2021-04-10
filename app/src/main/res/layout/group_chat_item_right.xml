@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:layout_alignParentEnd="true">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/profile_image"
+        android:layout_below="@+id/name"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/profile_image"
+        android:text="Giannis"
+        android:layout_alignParentEnd="true"
+        android:paddingHorizontal="5dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/name"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="8dp"
+        android:background="@drawable/background_right">
+
+        <TextView
+            android:id="@+id/show_message"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hello"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/image_message"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@+id/show_message"
+            android:src="@drawable/ic_image_black"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_message"
+            android:padding="2dp"
+            android:id="@+id/audio_message">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/play_audio"
+                android:src="@drawable/ic_play_white"/>
+            <ProgressBar
+                android:id="@+id/audio_length"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_toRightOf="@+id/play_audio"
+                android:layout_marginLeft="5dp"
+                android:layout_width="150dp"
+                android:layout_height="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:id="@+id/time_audio"
+                android:text="05:00"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@id/audio_length"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
