@@ -1,18 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.ChatApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.ChatApp" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/toolbar</item>
-        <item name="colorPrimaryDark">@color/toolbarDark</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/toolbarDark</item>
+        <item name="colorSecondary">@color/black</item>
         <item name="colorSecondaryVariant">@color/teel_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">@color/toolbarDark</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
         <!-- Customize your theme here. -->
         <item name="actionOverflowMenuStyle">@style/MenuStyle</item>
+        <item name="android:colorControlNormal">@color/white</item>
     </style>
 
     <style name="MenuStyle" parent="Theme.MaterialComponents.DayNight">

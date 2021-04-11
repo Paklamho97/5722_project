@@ -25,7 +25,8 @@
             android:textSize="18sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="hello"/>
+            android:text="hello"
+            android:textColor="@color/white"/>
 
         <ImageView
             android:id="@+id/image_message"
@@ -63,7 +64,8 @@
                 android:text="5:00"
                 android:layout_marginLeft="5dp"
                 android:gravity="center_vertical"
-                android:layout_toRightOf="@id/audio_length"/>
+                android:layout_toRightOf="@id/audio_length"
+                android:textColor="@color/white"/>
 
         </RelativeLayout>
 
@@ -74,6 +76,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/txt_seen"
         android:layout_below="@id/rl"
+        android:textColor="@color/white"
         android:visibility="gone"
         />
 </RelativeLayout>

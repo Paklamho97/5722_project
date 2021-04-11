@@ -58,7 +58,7 @@
         android:layout_toRightOf="@id/profile_image"
         android:layout_toLeftOf="@id/time"
         android:id="@+id/last_msg"
-        android:textColor="@color/toolbarDark"
+        android:textColor="@color/white"
         android:layout_marginLeft="10dp"
         android:maxLines="1"/>
 
